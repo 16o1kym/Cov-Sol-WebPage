@@ -1,0 +1,124 @@
+
+:root{
+    --primaryColor: #1b262c;
+    --secondaryColor: #F0F8FF;
+    --accentColor: #bbe1fa;
+        
+}
+
+
+.accordion{
+    background-color: var(--secondaryColor);
+    color: white;
+    margin: auto;
+    margin-bottom: 1vh;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    width: 70vw;
+    border:none;
+    text-align: left;
+    outline: none;
+    font-size: 0.8em;
+    transition: 0.4s;
+}
+.active, .accordion:hover{
+background: var(--secondaryColor);
+color: green;
+}
+
+.accordion:after{
+    content: '\002b';
+    /* columns: #777; */
+    font-weight: bold;
+    font-size: 1em;
+    float: right;
+    margin: auto;
+    /* margin-left: 5px;
+    margin-bottom: 0.5em; */
+}
+
+.active:after{
+    content: '\2212';
+}
+
+.panel{
+    padding:0 18px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 70vw;
+    margin:auto;
+    overflow:hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+@media screen and (max-width: 1124px) {
+
+    .accordion{
+        width: 90vw;
+    }
+
+}
+@media screen and (max-width: 942px) {
+
+    .accordion{
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 892px) {
+
+    .accordion:after{
+        display: none;
+    }
+
+    .accordion{
+        font-size: 0.8em;
+    }
+
+}@media screen and (max-width: 856px) {
+
+    .accordion:after{
+        display: none;
+    }
+
+    .accordion{
+        font-size: 0.6em;
+    }
+
+}
+@media screen and (max-width: 650px) {
+
+    .accordion:after{
+        display: none;
+    }
+
+    .accordion{
+       font-size: 0.6em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+        hyphens: auto;
+        letter-spacing: 2px;
+    }
+
+}@media screen and (max-width: 550px) {
+
+    .accordion:after{
+        display: none;
+    }
+
+    .accordion{
+       font-size: 0.6em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+        hyphens: auto;
+        letter-spacing: 0;
+    }
+
+}
