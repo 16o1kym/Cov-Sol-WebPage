@@ -43,8 +43,8 @@
 
 	/* hide scrollbar */
 	/* ::-webkit-scrollbar {
-		display: none;
-	} */
+		display: none; */
+	/* } */
 
 	@-ms-viewport {
 		width: device-width;
