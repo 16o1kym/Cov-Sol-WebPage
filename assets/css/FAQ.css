@@ -14,7 +14,6 @@
     margin-bottom: 1vh;
     font-weight: bold;
     cursor: pointer;
-    padding: 1em;
     width: 70vw;
     border:none;
     text-align: left;
@@ -43,9 +42,8 @@ color: green;
 }
 
 .panel{
-    padding:0 18px;
+    padding:0.4em;
     box-sizing: border-box;
-    background-color: white;
     width: 70vw;
     margin:auto;
     overflow:hidden;

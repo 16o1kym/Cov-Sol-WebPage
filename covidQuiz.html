@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/Quiz.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+</head>
+    <script src = "assets/js/Quiz.js"></script>
+</head>
+<body>
+
+    
+    
+
+    <div id="titles" >
+        <h1 id="Title1">Covid-19 Precaution Quiz</h1>
+       </div>   
+<form id="quiz" name="quiz">
+    <div id="quizWrap">
+    <p>What is the first important and essential thing that comes to your mind when you have to go out ?</p>
+    <input id = "textbox" type="text" name="question1">
+
+    <p>What is the most important thing to follow when you step out ?</p>
+    <input type="radio" id="mc" name="question2" value="Maintain 6 Feet Distance at all times">Maintain 6 Feet Distance at all times<br>
+    <input type="radio" id="mc" name="question2" value="Do not face anybody and talk">Do not face anybody and talk<br>
+    <input type="radio" id="mc" name="question2" value="Wear mask and walk normally like before">Wear mask and walk normally like before<br>
+    <input type="radio" id="mc" name="question2" value="Remove mask and talk to anyone with distance">Remove mask and talk to anyone with distance<br>
+
+
+    
+    <p>One item that you  always carry around ?</p>
+    <input type="radio" id="mc" name="question3" value="Money">Money<br>
+    <input type="radio" id="mc" name="question3" value="Water">Water<br>
+    <input type="radio" id="mc" name="question3" value="Sanitizer">Sanitizer<br>
+    <input type="radio" id="mc" name="question3" value="Tissue">Tissue<br>
+
+    <p>What do you think is one of the best ways keep the deadly virus away??</p>
+    <input type="radio" id="mc" name="question4" value="Take good rest">Take good rest<br>
+    <input type="radio" id="mc" name="question4" value="Drink lots of fluids">Drink lots of fluids<br>
+    <input type="radio" id="mc" name="question4" value="Wash your hands after touching any Surface">Wash your hands after touching any Surface<br>
+    <input type="radio" id="mc" name="question4" value="Wear gloves always">Wear gloves always<br>
+
+    <p>Which of the following best describes you?</p>
+    <input type="radio" id="mc" name="question5" value="Do not go out unless absolutely necessary">Do not go out unless absolutely necessary<br>
+    <input type="radio" id="mc" name="question5" value="Go out whenever bored">Go out whenever bored<br>
+    <input type="radio" id="mc" name="question5" value="Hangout with friends once in a while">Hangout with friends once in a while<br>
+    <input type="radio" id="mc" name="question5" value="Try to attend any type of gatherings">Try to attend any type of gatherings<br>
+
+
+
+
+    <input id ="button" type="button" value="Done" onclick="check();">
+</div>
+</form>
+<div id = "after_submit">
+
+    <p id = "message"></p>
+    <p id= "number_correct"></p>
+    <img id = "picture">
+</div>
+</html>
+</body>
+</html>

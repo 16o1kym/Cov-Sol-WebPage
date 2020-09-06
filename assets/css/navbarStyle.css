@@ -152,14 +152,14 @@ width: 105vw;
         opacity: 0;
     }
     .burger{
-        /* navbarfixed */
-background-color: var(--primaryColor);
-        position: fixed;
-        z-index: 20;
-        /* navbarfixed */
-        display: block;
-        margin-top: 1.5vh;
-        margin-left: 2.5vw;
+        background-color: var(--primaryColor);
+    left: 0;
+    position: fixed;
+    z-index: 20;
+    display: block;
+    margin-top: 0.5vh;
+    margin-left: 1vw;
+    padding: 0;
     }
 }
 .nav-active{
