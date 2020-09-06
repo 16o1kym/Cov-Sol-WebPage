@@ -47,6 +47,11 @@ $(document).ready(function () {
             // bubble
             // scatter
             type: 'line',
+            zoomEnabled: true,
+            // axisY:{
+            //     title: "Logarithmic Axis",
+            //     logarithmic: true //change it to false
+            // },
             data: {
                 labels: country,
                 datasets: [
@@ -70,14 +75,11 @@ $(document).ready(function () {
                     },
                 ],
             },
-            options: {},
-        })
+            options: {
+                
+            },
+        });
+        chart.render()
     })
 })
 
-fetch('https://api.covid19api.com/summary').then(result => result.json()).then(data => console.log(data['Global']))
-
-
-var globalData = fetch('https://api.covid19api.com/summary')
-var newConfirmed = globalData['NewConfirmed']
-console.log(newConfirmed)
