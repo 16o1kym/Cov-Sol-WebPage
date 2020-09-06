@@ -48,10 +48,11 @@ $(document).ready(function () {
             // scatter
             type: 'line',
             zoomEnabled: true,
-            // axisY:{
-            //     title: "Logarithmic Axis",
-            //     logarithmic: true //change it to false
-            // },
+            axisY:{
+                title: "Logarithmic Axis",
+                logarithmic: true 
+
+            },
             data: {
                 labels: country,
                 datasets: [
