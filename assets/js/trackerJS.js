@@ -46,13 +46,9 @@ $(document).ready(function () {
             // polar area
             // bubble
             // scatter
-            type: 'line',
+            type: 'bar',
             zoomEnabled: true,
-            axisY:{
-                title: "Logarithmic Axis",
-                logarithmic: true 
-
-            },
+            
             data: {
                 labels: country,
                 datasets: [
@@ -77,7 +73,66 @@ $(document).ready(function () {
                 ],
             },
             options: {
-                
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        ticks: {
+                            beginAtZero: true
+                        },
+                        scaleLabel: {
+                            display: true,
+                            
+                        }
+                    }],
+                    // yAxes: [{
+                    //     type: 'logarithmic',
+                    //     ticks: {
+                    //         min: 10,
+                    //         max: 1000000,
+                    //         callback: function (value, index, values) {
+                    //             return value ;
+                    //         }
+                    //     },
+                    //     scaleLabel: {
+                    //         display: true,
+                            
+                    //     }
+                    // }]
+
+                    yAxes: [{
+                        type: 'logarithmic',
+                        ticks: {
+                            autoSkip: false,
+                            min: 0,
+                            callback: function (value, index, values) {
+                                if( value==10 || value==100 || value==1000 || value==10000 || value==100000  || value==1000000 || value == 1000000){
+                                    return value ;
+                                }
+                            }
+                        },
+                        scaleLabel: {
+                            display: true,
+                            
+                        }
+                    }]
+                },
+
+                tooltips: {
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                            if (label) {
+                                label += ': ';
+                            }
+                            label += tooltipItem.yLabel.toFixed(2);
+                            return label;
+                        }
+                    }
+                },
+                legend: {
+                    display: false
+                }
             },
         });
         chart.render()

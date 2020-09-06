@@ -1064,7 +1064,7 @@
 		border-radius: 4px;
 		text-align: center;
 	}
-
+	
 		.item header {
 			border-top-left-radius: 4px;
 			border-top-right-radius: 4px;
@@ -1088,6 +1088,7 @@
 			position: relative;
 			overflow: hidden;
 		}
+		
 
 			.item header input, .item header select, .item header textarea {
 				color: #ffffff;
